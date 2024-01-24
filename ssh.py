@@ -52,12 +52,12 @@ def gui():
     dpg.create_context()
     dpg.create_viewport(title='SSH Command Center', width=1920, height=1080)
 
-    import TabOpener
+    #import TabOpener
     with dpg.window(label="Control center"):
         dpg.add_text("Python scripts") 
         dpg.add_text(f"Connected to {serveruser}@{domain}")
         dpg.add_button(label="command one", callback = echotest)
-        dpg.add_button(label="OpenerTab", callback = TabOpener)
+        #dpg.add_button(label="OpenerTab", callback = TabOpener)
         dpg.add_button(label='File Transfer', callback = sftp)
 
     dpg.setup_dearpygui()
